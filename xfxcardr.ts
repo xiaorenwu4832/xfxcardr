@@ -7,7 +7,7 @@
 /**
  * 自定义图形块
  */
-//% weight=5 color=#0fbc11 icon="\uf113"
+//% weight=5 color=#f2ea40 icon="\uf53b"
 namespace xfxcardr {
     const PCA9685_ADDRESS = 0x40
     const MODE1 = 0x00
