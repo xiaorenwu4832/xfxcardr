@@ -7,8 +7,8 @@
 /**
  * 自定义图形块
  */
-//% weight=5 color=#f2ea40 icon="\uf53b"
-namespace xfxcardr {
+//% weight=5 color=#d7981d icon="\uf53b"
+namespace Xfxcardr {
     const PCA9685_ADDRESS = 0x40
     const MODE1 = 0x00
     const MODE2 = 0x01
@@ -95,7 +95,7 @@ namespace xfxcardr {
 	 * Servo Execute
 	 * @param degree [0-180] degree of servo; eg: 90, 0, 180
 	*/
-    //% blockId=setServo block="xfxcardr channel|%channel|degree %degree"
+    //% blockId=setServo block="Servo channel|%channel|degree %degree"
     //% weight=85
     //% degree.min=0 degree.max=180
     export function Servo(channel: number,degree: number): void {
@@ -112,7 +112,7 @@ namespace xfxcardr {
 	 * Servo Execute
 	 * @param pulse [500-2500] pulse of servo; eg: 1500, 500, 2500
 	*/
-    //% blockId=setServoPulse block="xfxcardr  channel|%channel|pulse %pulse"
+    //% blockId=setServoPulse block="Servo channel|%channel|pulse %pulse"
     //% weight=85
     //% pulse.min=500 pulse.max=2500
     export function ServoPulse(channel: number,pulse: number): void {
