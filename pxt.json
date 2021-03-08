@@ -1,0 +1,25 @@
+{
+    "name": "xfxcardr",
+    "version": "0.0.0",
+    "description": "JiAn  ScienceEducation Co.,Ltd",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*",
+        "radio": "*",
+        "microphone": "*"
+    },
+    "files": [
+        "README.md",
+        "main.blocks",
+        "xfxcardr.ts",
+        "_locales/zh/strings.json"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true,
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "blocksprj"
+}
