@@ -178,21 +178,21 @@ namespace SuperBit {
 
 
     
-    //% blockId=SuperBit_Servo block="舵机 |编号 %num|角度 %value|补偿(角度)%comps"
+    //% blockId=SuperBit_Servo block="舵机(180)|编号 %num|角度 %value"
     //% weight=97
     //% blockGap=10
     //% num.min=1 num.max=4 value.min=0 value.max=180
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=20
-    export function Servo(num: enServo, value: number,comps:number): void {
+    export function Servo(num: enServo, value: number): void {
 
         // 50hz: 20,000 us
-        let us = ((value +comps)* 1800 / 180 + 600); // 0.6 ~ 2.4
+        let us = (value * 1800 / 180 + 600); // 0.6 ~ 2.4
         let pwm = us * 4096 / 20000;
         setPwm(num, 0, pwm);
 
     }
 
-    /*
+    
     //% blockId=SuperBit_Servo2 block="舵机(270)|编号 %num|角度 %value"
     //% weight=96
     //% blockGap=10
@@ -236,7 +236,7 @@ namespace SuperBit {
        
 
     }
-    */
+    
     
 
     //% blockId=SuperBit_MotorRun block=" 直流电机|%index|速度(-255~255) %speed"
